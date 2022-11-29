@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <title>Document</title>
+    
+</head>
+<body>
+<form name="myForm" id="form" action="#" method="POST" onsubmit="return validateForm();">
+    <div class="form-group">
+        <label for="name">Имя</label>
+        <label class="form-error" id="name_error">Введите имя</label>
+        <input
+                type="text"
+                placeholder="Никита"
+                name="name"
+                id="name"
+                data-reg="^[А-ЯЁ][а-яё]*$"
+              />
+    </div>
+    <div class="form-group">
+        <label for="second_name">Фамилия</label>
+        <label class="form-error" id="second_name_error">Введите фамилию</label>
+        <input
+                type="text"
+                placeholder="Смолин"
+                name="second_name"
+                id="second_name"
+                data-reg="^[А-ЯЁ][а-яё]*$"
+              />
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <label class="form-error" id="email_error">Введите почту</label>
+        <label class="form-error" id="email_error2">Почта введена неверно</label>
+        <input
+                type="text"
+                placeholder="example@gmail.com"
+                name="email"
+                id="email"
+                data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+              />
+    </div>
+    <div class="form-group">
+        <label for="passwd1">Пароль</label>
+        <label class="form-error" id="passwd_error">Введите пароль</label>
+        <input 
+                placeholder="**********"
+                type="password" 
+                name="passwd1" 
+                id="passwd1" 
+                data-reg="^([A-z0-9][-A-z0-9]$">
+    </div>
+    <div class="form-group">
+        <label for="passwd2">Повторите пароль</label>
+        <input 
+                placeholder="**********"
+                type="password" 
+                name="passwd2" 
+                id="passwd2" 
+                data-reg="^^([A-z0-9][-A-z0-9]$$">
+    </div>
+        <div class="form-group">
+            <label for="gender">Пол</label>
+            <label class="form-error" id="gender_error">Укажите пол</label>
+        </div>
+    <div class="form-group d-flex">
+        <div class="form-group">
+            <label for="male">Мужской</label>
+            <input type="radio" id="male" name="gender">
+        </div>
+        <div class="form-group">
+            <label for="female">Женский</label>
+            <input type="radio" id="female" name="gender">
+        </div>  
+    </div>    
+    <div class="form-group">
+        <label for="opt">Выберете страну</label>
+        <select name="opt" id="opt">
+            <option selected>Россия</option>
+            <option>Украина</option>
+            <option>Сша</option>
+            <option>Канада</option>
+        </select>
+    </div>
+    <div class="form-group d-flex">
+        <div class="form-group" style="justify-content: flex-start">
+            <label for="subscribe" style="margin-right: 30px">Я согласен получать рассылку</label>
+            <input type="checkbox" class="custom-checkbox" name="subscribe" id="subscribe">
+        </div>
+    </div>
+    <div class="button">
+        <input type="submit" id="button" value="Отправить" />
+    </div>
+</form>
+<style></style>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

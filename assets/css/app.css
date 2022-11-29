@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+#form{
+    padding: 30px;
+    border-radius: 50px;
+    background-color: #161616;
+}
+
+body {
+    margin: 0 auto;
+    width: 40%;
+    max-width: 760px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.d-flex {
+    display: flex;
+    
+    
+}
+
+.d-flex .form-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.d-flex .form-group  label{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.form-group {
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: #ff0000;
+    background-color: #ff0000;
+    
+}
+
+input[type=radio], input[type=checkbox] {
+    width: 24px;
+    height: 24px;
+    color: #ff0000;
+    background-color: #ff0000;
+    
+}
+#opt {
+    color: #ffffff;
+    background-color: #161616;
+}
+#name {
+    color: #ffffff;
+    background-color: #161616;
+}
+
+#second_name {
+    color: #ffffff;
+    background-color: #161616;
+}
+
+#email {
+    color: #ffffff;
+    background-color: #161616;
+}
+
+#passwd1 {
+    color: #ffffff;
+    background-color: #161616;
+}
+
+#passwd2 {
+    color: #ffffff;
+    background-color: #161616;
+}
+
+input:focus, select:focus {
+    background-color: #161616;
+}
+
+
+button[type=submit] {
+    margin-top: 10px;
+    padding: 10px 5px;
+}
+
+#button{
+    width: 50%;
+    border-radius: 10px;
+    color: #161616;
+    border-color: #ffffff;
+    background-color: #ffffff;
+    
+}
+
+.form-error {
+    color: rgb(146, 55, 55);
+    font-size: 14px;
+    display: block;
+    display: none;
+    
+}
+
+label{
+    font-weight: 500;
+    
+}
